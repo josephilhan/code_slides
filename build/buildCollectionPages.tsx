@@ -133,6 +133,7 @@ function CollectionPage(props: {
   return (
     <HtmlPage lang={props.lang}>
       <div className="docs-container">
+        <button id="nav-toggle-button">Menu</button>
         <nav>
           {props.collection instanceof Collection ? (
             <>
