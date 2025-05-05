@@ -1,0 +1,30 @@
+.add-todo-form {
+  display: flex;
+  gap: 0.75rem;
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--gray-200);
+}
+
+.add-todo-input {
+  flex: 1;
+  min-width: 0;
+}
+
+.add-todo-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.add-todo-button {
+  align-self: flex-end;
+  background-color: var(--success-color);
+}
+
+.add-todo-button:hover:not(:disabled) {
+  background-color: var(--success-hover);
+} 

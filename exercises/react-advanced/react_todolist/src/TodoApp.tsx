@@ -18,11 +18,22 @@ const TodoApp = () => {
   } = useTodos();
   return (
     <div className="TodoApp">
-      <h1>Todo</h1>
-      <Stats todos={todos} />
-      <LoadFromApi isLoading={isLoading} onLoad={loadFromApi} />
-      <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
-      <AddTodo onAddTodo={addTodo} />
+      <h1>Todo App</h1>
+      
+      <div className="TodoApp__sidebar">
+        <Stats todos={todos} />
+        <LoadFromApi isLoading={isLoading} onLoad={loadFromApi} />
+      </div>
+      
+      <div className="TodoApp__main">
+        <div className="todolist-container">
+          <TodoList todos={todos} onToggle={toggleTodo} onDelete={deleteTodo} />
+        </div>
+      </div>
+      
+      <div className="TodoApp__footer">
+        <AddTodo onAddTodo={addTodo} />
+      </div>
     </div>
   );
 };

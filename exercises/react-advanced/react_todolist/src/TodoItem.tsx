@@ -14,12 +14,23 @@ const TodoItem = (props: Props) => {
   if (props.completed) {
     className += " completed";
   }
+  
   return (
-    <li onClick={props.onToggle} className={className}>
-      <span className={props.completed ? "todo-item-text-completed" : ""}>
-        {props.completed ? "DONE" : "TODO"}: {props.title}
-      </span>
-      <button onClick={props.onDelete}>delete</button>
+    <li className={className}>
+      <div className="todo-item-text" onClick={props.onToggle}>
+        <span className="todo-item-status">
+          {props.completed ? "✓" : ""}
+        </span>
+        <span className={props.completed ? "todo-item-text-completed" : ""}>
+          {props.title}
+        </span>
+      </div>
+      <button className="todo-item-delete" onClick={(e) => {
+        e.stopPropagation();
+        props.onDelete();
+      }}>
+        Delete
+      </button>
     </li>
   );
 };
