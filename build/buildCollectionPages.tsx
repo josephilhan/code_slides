@@ -76,16 +76,8 @@ function CollectionOverviewPage(props: {
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
         <nav>
-          <a href={`index-${props.lang}.html`}>Home</a> |{" "}
-          {props.lang !== "de" ? (
-            <a href="index-de.html">German version</a>
-          ) : null}
-          {props.lang !== "en" ? (
-            <a href="index-en.html">English version</a>
-          ) : null}
-        </nav>
-        <h1>{props.collection.titles[props.lang]}</h1>
-        {props.collection.parent ? (
+          <a href={`index-${props.lang}.html`}>Home</a> 
+        </nav>        {props.collection.parent ? (
           <p>
             parent topic:{" "}
             <a
