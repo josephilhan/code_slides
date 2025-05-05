@@ -18,7 +18,8 @@ const COLLECTION_CHECKLIST_POSTFIX = "checklist";
 
 const PAGE_MARKER = "page";
 
-const BASE_URL = "/slides";
+// Change from absolute path to relative path to fix file not found errors
+const BASE_URL = "";
 
 export {
   BASE_URL,

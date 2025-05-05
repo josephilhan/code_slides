@@ -75,9 +75,7 @@ function CollectionOverviewPage(props: {
   return (
     <HtmlPage lang={props.lang}>
       <div style={{ padding: "1rem" }}>
-        <nav>
-          <a href={`index-${props.lang}.html`}>Home</a> 
-        </nav>        {props.collection.parent ? (
+          {props.collection.parent ? (
           <p>
             parent topic:{" "}
             <a
