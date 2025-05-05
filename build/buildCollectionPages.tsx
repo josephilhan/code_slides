@@ -70,13 +70,13 @@ function CollectionOverviewPage(props: {
   const extraContentParts = props.collection.pages?.[props.lang]?.split(
     "<!-- CONTENT-BELOW -->"
   );
-  const extraContentAbove = extraContentParts?.[0];
-  const extraContentBelow = extraContentParts?.[1];
+  const extraContentAbove = extraContentParts?.[0] || "";
+  const extraContentBelow = extraContentParts?.[1] || "";
   return (
     <HtmlPage lang={props.lang}>
-      <div style={{ padding: "1rem" }}>
-          {props.collection.parent ? (
-          <p>
+      <div className="overview-container">
+        {props.collection.parent ? (
+          <p className="parent-link">
             parent topic:{" "}
             <a
               href={`${BASE_URL}/${props.collection.parent.relId}-${props.lang}.html`}
@@ -86,7 +86,7 @@ function CollectionOverviewPage(props: {
           </p>
         ) : null}
         <ReactMarkdown>{extraContentAbove}</ReactMarkdown>
-        <ul>
+        <ul className="topic-list">
           {props.collection.children.map((child) => {
             if (!child.languages.includes(props.lang)) {
               return null;
@@ -132,31 +132,18 @@ function CollectionPage(props: {
   `;
   return (
     <HtmlPage lang={props.lang}>
-      <div style={{ height: "100%", display: "flex", alignItems: "stretch" }}>
-        <nav
-          style={{
-            flexBasis: "320px",
-            overflow: "auto",
-            paddingTop: "4em",
-            paddingLeft: "1em",
-            paddingRight: "1em",
-            paddingBottom: "0.5em",
-            // needed for:
-            // https://github.com/w3c/csswg-drafts/issues/129
-            // https://bugzilla.mozilla.org/show_bug.cgi?id=748518
-            marginBottom: "0.5em",
-          }}
-        >
+      <div className="docs-container">
+        <nav>
           {props.collection instanceof Collection ? (
             <>
-              <div>
+              <div className="nav-header">
                 <a href={`index-${props.lang}.html`}>Home</a>
               </div>
               {getNavEntry(props.collection, props.lang)}
             </>
           ) : (
             <>
-              <div>
+              <div className="nav-header">
                 parent topic:{" "}
                 <a
                   href={`${BASE_URL}/${props.collection.parent.relId}-${props.lang}.html`}
@@ -164,7 +151,7 @@ function CollectionPage(props: {
                   {props.collection.parent.titles[props.lang]}
                 </a>
               </div>
-              <div>
+              <div className="nav-action">
                 <a href={`${props.collection.relId}-${props.lang}.html`}>
                   show presentation individually
                 </a>
@@ -173,35 +160,13 @@ function CollectionPage(props: {
             </>
           )}
         </nav>
-        <main style={{ flexGrow: 1 }}>
+        <main>
           <iframe
             name="content"
             style={{ width: "100%", height: "100%", border: "none" }}
           />
         </main>
-        <button
-          id="nav-toggle-button"
-          style={{
-            position: "absolute",
-            top: "1rem",
-            left: "1rem",
-            padding: "0.4em 0.8em",
-            cursor: "pointer",
-            borderRadius: "0.25em",
-            backgroundColor: "#0074d9",
-            color: "#ffffff",
-            border: "none",
-          }}
-          onClick={() => {
-            const nav = document.querySelector(
-              "body > div > nav"
-            ) as HTMLElement;
-            nav.style.display =
-              nav.style.display === "block" ? "none" : "block";
-          }}
-        >
-          toggle sidebar
-        </button>
+     
         <style dangerouslySetInnerHTML={{ __html: css }} />
         <script dangerouslySetInnerHTML={{ __html: script }} />
       </div>
@@ -289,10 +254,12 @@ function getNavEntry(element: Collection | Topic, lang: string) {
 }
 
 function CollectionTopicsPage(props: { collection: Collection; lang: string }) {
+  const topicContent = props.collection.topicPages?.[props.lang] || "";
+  
   return (
     <HtmlPage lang={props.lang}>
-      <div style={{ padding: "1rem" }}>
-        <nav>
+      <div className="overview-container">
+        <nav className="nav-header">
           <a href={`/index-${props.lang}.html`}>Home</a> |{" "}
           {props.lang !== "de" ? (
             <a href="/index-de.html">German version</a>
@@ -301,7 +268,7 @@ function CollectionTopicsPage(props: { collection: Collection; lang: string }) {
             <a href="/index-en.html">English version</a>
           ) : null}
         </nav>
-        <ReactMarkdown>{props.collection.topicPages[props.lang]}</ReactMarkdown>
+        <ReactMarkdown>{topicContent}</ReactMarkdown>
       </div>
     </HtmlPage>
   );
@@ -311,10 +278,12 @@ function CollectionChecklistPage(props: {
   collection: Collection;
   lang: string;
 }) {
+  const checklistContent = props.collection.checklistPages?.[props.lang] || "";
+  
   return (
     <HtmlPage lang={props.lang}>
-      <div style={{ padding: "1rem" }}>
-        <nav>
+      <div className="overview-container">
+        <nav className="nav-header">
           <a href={`/index-${props.lang}.html`}>Home</a> |{" "}
           {props.lang !== "de" ? (
             <a href="/index-de.html">German version</a>
@@ -323,9 +292,7 @@ function CollectionChecklistPage(props: {
             <a href="/index-en.html">English version</a>
           ) : null}
         </nav>
-        <ReactMarkdown>
-          {props.collection.checklistPages[props.lang]}
-        </ReactMarkdown>
+        <ReactMarkdown>{checklistContent}</ReactMarkdown>
       </div>
     </HtmlPage>
   );
