@@ -1,4 +1,4 @@
-[Themen](./python-and-data-science-all-collection-topics-de.html) | [Übungen](https://github.com/Joseph-knoebl/slides/tree/master/exercises)
+[Themen](./python-and-data-science-all-collection-topics-de.html) | [Übungen](https://github.com/Joseph-ilhan/slides/tree/master/exercises)
 
 ~ 500 Slides zu _Python und Data Science_
 

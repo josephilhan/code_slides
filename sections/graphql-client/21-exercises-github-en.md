@@ -9,7 +9,7 @@
 
 ```graphql
 query {
-  user(login: "Joseph-knoebl") {
+  user(login: "Joseph-ilhan") {
     followers(first: 10) {
       nodes {
         login
@@ -28,7 +28,7 @@ query {
 
 ```graphql
 query {
-  user(login: "Joseph-knoebl") {
+  user(login: "Joseph-ilhan") {
     id
     email
     repositories(

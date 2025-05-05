@@ -37,4 +37,4 @@ exercise: create a JSON-RPC API that supports the queries `pokemon_by_name` and 
 
 exercise: create a JSON-RPC API that is connected to a database (e.g. _MongoDB_) and that manages a set of todos; use _jayson_ as a library for this task
 
-for solutions, see https://github.com/Joseph-knoebl/slides/tree/master/exercises/node-and-express-intermediate
+for solutions, see https://github.com/Joseph-ilhan/slides/tree/master/exercises/node-and-express-intermediate

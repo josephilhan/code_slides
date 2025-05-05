@@ -70,9 +70,9 @@ https://codelabs.developers.google.com/codelabs/workbox-lab/
 
 Turn one of these apps into a PWA and use various caching strategies:
 
-- https://github.com/Joseph-knoebl/simple-todo-app
-- https://github.com/Joseph-knoebl/simple-weather-app
-- https://github.com/Joseph-knoebl/simple-stock-app
+- https://github.com/Joseph-ilhan/simple-todo-app
+- https://github.com/Joseph-ilhan/simple-weather-app
+- https://github.com/Joseph-ilhan/simple-stock-app
 
 ## bonus (with build)
 

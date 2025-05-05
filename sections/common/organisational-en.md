@@ -1,6 +1,6 @@
 ## Slides
 
-https://Joseph-knoebl.github.io/slides/
+https://Joseph-ilhan.github.io/slides/
 
 ## Your Trainer
 
@@ -28,4 +28,4 @@ Joseph Knöbl
 
 ## Code
 
-Code available at: https://github.com/Joseph-knoebl/courses-code
+Code available at: https://github.com/Joseph-ilhan/courses-code

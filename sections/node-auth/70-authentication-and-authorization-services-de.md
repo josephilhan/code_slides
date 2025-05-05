@@ -10,8 +10,8 @@ Beispiel für ein Authorisierungs-Token für GitHub:
 Authorisierungs-Token für GitHub
 Der "Träger" dieses Tokens kann:
 
-- neue Repositories für den User "Joseph-knoebl" erstellen
-- Repositories des Users "Joseph-knoebl" löschen
+- neue Repositories für den User "Joseph-ilhan" erstellen
+- Repositories des Users "Joseph-ilhan" löschen
 ```
 
 ## Technologien

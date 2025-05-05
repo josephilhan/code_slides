@@ -10,8 +10,8 @@ example authorization token for GitHub:
 authorization token for GitHub
 the holder of this token may:
 
-- create new repositories for user "Joseph-knoebl"
-- delete repositories belonging to user "Joseph-knoebl"
+- create new repositories for user "Joseph-ilhan"
+- delete repositories belonging to user "Joseph-ilhan"
 ```
 
 ## Technologies

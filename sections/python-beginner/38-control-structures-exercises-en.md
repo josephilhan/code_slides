@@ -9,4 +9,4 @@
 - login system
 - leap year
 
-see <https://github.com/Joseph-knoebl/slides/tree/master/exercises/python-beginner>
+see <https://github.com/Joseph-ilhan/slides/tree/master/exercises/python-beginner>

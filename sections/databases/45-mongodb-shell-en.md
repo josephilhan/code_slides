@@ -10,7 +10,7 @@ https://docs.mongodb.com/manual/tutorial/getting-started/
 
 use a subset of MongoDB shell in pure JavaScript (without installing MongoDB):
 
-https://github.com/Joseph-knoebl/mingodb
+https://github.com/Joseph-ilhan/mingodb
 
 ## Commands
 

@@ -18,11 +18,6 @@ const COLLECTION_CHECKLIST_POSTFIX = "checklist";
 
 const PAGE_MARKER = "page";
 
-/**
- * url where the deployment will be hosted
- * - "docs" for local testing
- * - "slides" for deployment on Joseph-knoebl.github.io/slides
- */
 const BASE_URL = "/slides";
 
 export {

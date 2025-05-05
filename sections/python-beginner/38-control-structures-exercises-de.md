@@ -9,4 +9,4 @@
 - Loginsystem
 - Schaltjahr
 
-siehe <https://github.com/Joseph-knoebl/slides/tree/master/exercises/python-beginner>
+siehe <https://github.com/Joseph-ilhan/slides/tree/master/exercises/python-beginner>

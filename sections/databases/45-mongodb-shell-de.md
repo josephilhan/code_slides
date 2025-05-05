@@ -10,7 +10,7 @@ https://docs.mongodb.com/manual/tutorial/getting-started/
 
 eine Untermenge der MongoDB shell in reinem JavaScript verwenden (ohne Installation von MongoDB):
 
-https://github.com/Joseph-knoebl/mingodb
+https://github.com/Joseph-ilhan/mingodb
 
 ## Befehle
 

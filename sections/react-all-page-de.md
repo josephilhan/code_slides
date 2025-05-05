@@ -1,4 +1,4 @@
-[Themen](react-all-collection-topics-en.html) | [Checklist](react-all-checklist-de.html) | [Übungen](https://github.com/Joseph-knoebl/slides/tree/master/exercises)
+[Themen](react-all-collection-topics-en.html) | [Checklist](react-all-checklist-de.html) | [Übungen](https://github.com/Joseph-ilhan/slides/tree/master/exercises)
 
 ~ 950 Slides zu React-Themen
 
@@ -10,7 +10,7 @@
 
 ## Checkliste
 
-Tracke deinen Fortschritt mit dieser [Checkliste](https://gist.github.com/Joseph-knoebl/6544017b7c8ebd94e37e7b9ddcffc906)
+Tracke deinen Fortschritt mit dieser [Checkliste](https://gist.github.com/Joseph-ilhan/6544017b7c8ebd94e37e7b9ddcffc906)
 
 ## Andere kostenlose Ressourcen
 

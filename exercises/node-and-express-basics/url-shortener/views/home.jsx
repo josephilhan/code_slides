@@ -18,8 +18,8 @@ export default () => {
         <p>
           <small>
             source code:{" "}
-            <a href="https://github.com/Joseph-knoebl/exercise-express-url-shortener">
-              https://github.com/Joseph-knoebl/exercise-express-url-shortener
+            <a href="https://github.com/Joseph-ilhan/exercise-express-url-shortener">
+              https://github.com/Joseph-ilhan/exercise-express-url-shortener
             </a>
           </small>
         </p>

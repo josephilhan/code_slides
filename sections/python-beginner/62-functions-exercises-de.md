@@ -12,4 +12,4 @@
 
 für Strichcodes / Primzahlen: Recherchiere den % - Operator
 
-Siehe: <https://github.com/Joseph-knoebl/slides/tree/master/exercises/python-beginner>
+Siehe: <https://github.com/Joseph-ilhan/slides/tree/master/exercises/python-beginner>
