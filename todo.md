@@ -1,0 +1,8 @@
+- Python
+  - catching exceptions earlier
+  - ? recursive drawings with matplotlib
+  - include link to aicheatsheets.com
+  - WASM-based jupyter: https://jupyterlite.readthedocs.io/en/latest/try/lab (no keras)
+- react
+  - import * as React from "react"
+  - ? predefined redux project that can be used to create a react application

@@ -1,0 +1,51 @@
+{
+  "type": "collection",
+  "titles": {
+    "en": "React",
+    "de": "React"
+  },
+  "childUrls": [
+    "./welcome/index-topic.json",
+    "./react-01-introduction-and-overview/index.json",
+    "./react-02-javascript-basics-for-react/index.json",
+    "./react-03-state/index.json",
+    "./react-04-jsx/index.json",
+    "./react-05-typescript-for-react/index.json",
+    "./react-06-exercise-todo-list/index.json",
+    "./vs-code-for-javascript/index-topic.json",
+    "./react-07-project-setup-and-development-tooling/index.json",
+    "./react-20-components-and-hooks/index.json",
+    "./react-21-custom-components/index.json",
+    "./react-22-custom-hooks/index.json",
+    "./react-23-react-ecosystem-and-libraries/index.json",
+    "./react-24-component-libraries/index.json",
+    "./react-25-querying-apis/index.json",
+    "./react-26-react-router/index.json",
+    "./react-27-styling-tools-and-animations/index.json",
+    "./react-28-forms/index.json",
+    "./react-30-state-in-detail/index.json",
+    "./react-35-side-effects/index.json",
+    "./react-40-context/index.json",
+    "./react-50-class-components/index.json",
+    "./react-60-refs/index.json",
+    "./react-advanced/index-topic.json",
+    "./javascript-testing/index-topic.json",
+    "./react-testing-and-component-demos/index-topic.json",
+    "./react-pre-rendering-and-nextjs/index-topic.json",
+    "./react-performance-optimization/index-topic.json",
+    "./react-redux/index-topic.json"
+  ],
+  "languages": ["en", "de"],
+  "pageUrls": {
+    "en": "./react-all-page-en.md",
+    "de": "./react-all-page-de.md"
+  },
+  "topicPageUrls": {
+    "en": "./react-all-topics-en.md",
+    "de": "./react-all-topics-de.md"
+  },
+  "checklistPageUrls": {
+    "en": "./react-checklist-en.md",
+    "de": "./react-checklist-de.md"
+  }
+}

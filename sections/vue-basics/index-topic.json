@@ -1,0 +1,8 @@
+{
+  "type": "topic",
+  "languages": ["en", "de"],
+  "titles": {
+    "de": "Vue Grundlagen",
+    "en": "Vue Basics"
+  }
+}

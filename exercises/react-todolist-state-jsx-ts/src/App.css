@@ -1,0 +1,37 @@
+.App {
+  max-width: 600px;
+  margin: 0px auto;
+}
+
+.TodoList {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.TodoItem {
+  margin: 8px 0px;
+  padding: 8px;
+  border: 1px solid grey;
+  display: flex;
+}
+
+.TodoItem--Incomplete {
+  background-color: lightblue;
+}
+
+.TodoItem--Completed {
+  background-color: lightgrey;
+}
+
+.TodoItem__Text {
+  flex-grow: 1;
+}
+
+.TodoItem__Text--Completed {
+  text-decoration: line-through;
+}
+
+.Statistics {
+  margin-top: 16px;
+}

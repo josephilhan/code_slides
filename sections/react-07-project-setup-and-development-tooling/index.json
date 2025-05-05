@@ -1,0 +1,8 @@
+{
+  "type": "topic",
+  "languages": ["en", "de"],
+  "titles": {
+    "en": "Project Setup and Development Tooling",
+    "de": "Projekteinrichtung und Entwicklerwerkzeuge"
+  }
+}

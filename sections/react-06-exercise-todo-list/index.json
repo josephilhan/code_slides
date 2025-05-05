@@ -1,0 +1,8 @@
+{
+  "type": "topic",
+  "languages": ["en", "de"],
+  "titles": {
+    "en": "Exercise: Todo list",
+    "de": "Übung: Todo-Liste"
+  }
+}
