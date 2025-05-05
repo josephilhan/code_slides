@@ -133,12 +133,11 @@ function CollectionPage(props: {
   return (
     <HtmlPage lang={props.lang}>
       <div className="docs-container">
-        <button id="nav-toggle-button">Menu</button>
         <nav>
           {props.collection instanceof Collection ? (
             <>
               <div className="nav-header">
-                <a href={`index-${props.lang}.html`}>Home</a>
+                <a href={`${BASE_URL}/index-${props.lang}.html`}>Home</a>
               </div>
               {getNavEntry(props.collection, props.lang)}
             </>
@@ -261,12 +260,12 @@ function CollectionTopicsPage(props: { collection: Collection; lang: string }) {
     <HtmlPage lang={props.lang}>
       <div className="overview-container">
         <nav className="nav-header">
-          <a href={`/index-${props.lang}.html`}>Home</a> |{" "}
+          <a href={`${BASE_URL}/index-${props.lang}.html`}>Home</a> |{" "}
           {props.lang !== "de" ? (
-            <a href="/index-de.html">German version</a>
+            <a href={`${BASE_URL}/index-de.html`}>German version</a>
           ) : null}
           {props.lang !== "en" ? (
-            <a href="/index-en.html">English version</a>
+            <a href={`${BASE_URL}/index-en.html`}>English version</a>
           ) : null}
         </nav>
         <ReactMarkdown>{topicContent}</ReactMarkdown>
@@ -285,12 +284,12 @@ function CollectionChecklistPage(props: {
     <HtmlPage lang={props.lang}>
       <div className="overview-container">
         <nav className="nav-header">
-          <a href={`/index-${props.lang}.html`}>Home</a> |{" "}
+          <a href={`${BASE_URL}/index-${props.lang}.html`}>Home</a> |{" "}
           {props.lang !== "de" ? (
-            <a href="/index-de.html">German version</a>
+            <a href={`${BASE_URL}/index-de.html`}>German version</a>
           ) : null}
           {props.lang !== "en" ? (
-            <a href="/index-en.html">English version</a>
+            <a href={`${BASE_URL}/index-en.html`}>English version</a>
           ) : null}
         </nav>
         <ReactMarkdown>{checklistContent}</ReactMarkdown>

@@ -18,8 +18,8 @@ const COLLECTION_CHECKLIST_POSTFIX = "checklist";
 
 const PAGE_MARKER = "page";
 
-// Change from absolute path to relative path to fix file not found errors
-const BASE_URL = "";
+// Change to relative path with dot to work correctly with domain paths
+const BASE_URL = ".";
 
 export {
   BASE_URL,
